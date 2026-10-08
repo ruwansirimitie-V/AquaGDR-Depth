@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use AquaGDR-Depth, please cite the paper. Replace the TODO fields before release."
+title: "AquaGDR-Depth: Underwater Panoramic Metric Depth Estimation"
+type: software
+version: 0.1.0
+date-released: 2026-10-07
+authors:
+  - family-names: "TODO"
+    given-names: "Add author name"
+abstract: >-
+  A gated dual-projection network with local-detail residual refinement for
+  metric depth estimation from a single underwater equirectangular panorama.
+keywords:
+  - underwater vision
+  - panoramic depth estimation
+  - equirectangular panorama

@@ -1,0 +1,72 @@
+seed: 42
+
+data:
+  dataset: matterport3d
+  data_path: data/underwater_erp
+  train_list: data/splits/train.txt
+  val_list: data/splits/val.txt
+  height: 512
+  width: 1024
+  batch_size: 2
+  num_workers: 4
+  disable_color_augmentation: false
+  disable_LR_filp_augmentation: false
+  disable_yaw_rotation_augmentation: false
+
+model:
+  num_layers: 18
+  max_depth: 10.0
+  fusion_type: gated
+  se_in_fusion: false
+  input_adaptation: true
+  imagenet_pretrained: false
+  joint_trainable_keywords: [equi_decoder]
+  global_context: {enabled: false}
+  local_detail:
+    enabled: false
+    base_channels: 12
+    out_channels: 16
+    num_blocks: 2
+    circular_edge: false
+    use_edge: true
+    use_low_resolution: true
+    circular_padding: true
+    predict_hard_region: false
+  qgrr:
+    min_depth: 0.001
+    use_coarse_refinement: false
+    residual_cap: 0.0
+    use_rgb: true
+    use_edge: true
+    use_global_context: false
+    context_channels: 0
+    use_local_detail: false
+    detail_channels: 0
+    detail_residual_cap: 0.5
+    use_detail_mask: true
+    bounded_detail_residual: true
+    use_hard_gate: false
+    erp_circular: false
+
+pano_backbone:
+  weight_file: checkpoints/backbone_init.pth
+
+loss:
+  w_depth: 1.0
+  w_grad: 0.3
+  w_hard: 0.0
+  pairwise_valid_grad: true
+
+train:
+  stage: stage_backbone_finetune
+  resume_ckpt: ''
+  lr: 0.00005
+  weight_decay: 0.0
+  amp: false
+  epochs: 10
+  save_every: 1
+  select_by_primary_loss: true
+  output_dir: runs/stage1
+
+eval:
+  output_dir: runs/evaluation

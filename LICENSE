@@ -1,0 +1,5 @@
+TODO: Select and insert the project license before public release.
+
+This placeholder is not a software license and does not grant permission to
+use, modify, or redistribute project code. The third-party UniFuse component
+has its own license at third_party/unifuse/LICENSE.
