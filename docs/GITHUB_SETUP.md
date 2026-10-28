@@ -5,11 +5,12 @@ remote repository only after checking the publication and license checklist.
 
 ## Before the first push
 
-1. Replace the top-level `LICENSE` placeholder with a license approved by all
-   code authors and check compatibility with the UniFuse MIT notice.
-2. Fill in the author and final paper details in `CITATION.cff`.
-3. Add the upstream UniFuse URL and exact revision to
-   `third_party/unifuse/UPSTREAM.md`.
+1. Confirm that the paper authors and any institutional rights holder approve
+   release of the original project code under the top-level MIT License.
+2. Verify the author details in `CITATION.cff` and add the final paper DOI after
+   publication.
+3. Preserve the upstream UniFuse URL, provenance statement, copyright notice,
+   and MIT License under `third_party/unifuse/`.
 4. Verify that every included file can be redistributed. The dataset, split
    lists, checkpoints, and run outputs are deliberately not included.
 5. Search for private paths, usernames, tokens, and internal experiment logs.
@@ -30,7 +31,7 @@ Open PowerShell in this folder, replace the URL with the GitHub URL shown on
 your repository page, and run:
 
 ```powershell
-cd D:\UDBF-Depth-v3\AquaGDR-Depth
+cd C:\path\to\AquaGDR-Depth
 git add README.md LICENSE CITATION.cff environment.yml .gitignore configs aquagdr tools docs tests third_party
 git status --short
 git diff --cached --stat
