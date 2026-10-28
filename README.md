@@ -4,11 +4,11 @@ AquaGDR-Depth estimates metric depth from a single underwater equirectangular
 (ERP) panorama. Its model combines projection-specific input adaptation,
 five-scale gated ERP/Cubemap fusion, and local-detail residual refinement.
 
-> **Release status:** this is a clean source-code package prepared from the
-> research project. The dataset, split lists, and checkpoints are not bundled.
-> Before public release, fill the author/citation fields and choose a license.
-> The top-level `LICENSE` is intentionally a placeholder and is not a grant of
-> rights. Do not publish until it is replaced with the license you choose.
+> **Release status:** this repository contains the source-code release prepared
+> from the research project and is licensed under the MIT License. The dataset,
+> split lists, and pretrained checkpoints are not bundled in the source tree.
+> A paper-final checkpoint should be distributed separately through a GitHub
+> Release after its file hash and evaluation provenance have been recorded.
 
 ## Repository layout
 
@@ -119,7 +119,9 @@ retained there. Please cite the UniFuse paper in addition to AquaGDR-Depth when
 appropriate. See `third_party/unifuse/UPSTREAM.md` for the provenance fields to
 complete before release.
 
-## Citation
+## License and citation
 
-The `CITATION.cff` file is a template. Replace the author placeholder and add
-the final paper DOI or URL once available.
+The AquaGDR-Depth source code is released under the MIT License. The adapted
+UniFuse files retain their upstream MIT copyright and license notice under
+`third_party/unifuse/`. See `CITATION.cff` for the software citation. The final
+paper DOI can be added after publication.
