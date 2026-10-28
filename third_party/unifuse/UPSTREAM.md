@@ -8,5 +8,10 @@ project-specific changes for the gated ERP/Cubemap backbone and input stems.
 Upstream paper: H. Jiang et al., “UniFuse: Unidirectional Fusion for 360°
 Panorama Depth Estimation,” IEEE Robotics and Automation Letters, 2021.
 
-Before publishing, add the exact upstream repository URL and revision used for
-this copy, and keep all upstream notices intact.
+Upstream repository:
+https://github.com/alibaba/UniFuse-Unidirectional-Fusion
+
+The exact upstream commit identifier was not preserved with the research
+snapshot from which these files were adapted. The redistributed files and all
+project-specific changes are included in this repository, and the upstream
+MIT copyright and license notice remain intact in `LICENSE`.
