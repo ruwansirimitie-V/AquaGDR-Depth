@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use AquaGDR-Depth, please cite the software and the accompanying paper."
+title: "AquaGDR-Depth: Gated dual-projection fusion and local-detail refinement for underwater panoramic depth estimation"
+type: software
+version: 0.1.0
+repository-code: "https://github.com/ruwansirimitie-V/AquaGDR-Depth"
+license: MIT
+authors:
+  - family-names: "Gao"
+    given-names: "XiuJing"
+    orcid: "https://orcid.org/0009-0008-9660-0823"
+  - family-names: "Shi"
+    given-names: "HuiFan"
+    orcid: "https://orcid.org/0009-0004-8733-2004"
+  - family-names: "Zhang"
+    given-names: "Biwen"
+    orcid: "https://orcid.org/0009-0009-6766-9765"
+  - family-names: "Huang"
+    given-names: "Xinhua"
+    orcid: "https://orcid.org/0009-0007-1095-9820"
+  - family-names: "Zeng"
+    given-names: "Su"
+    orcid: "https://orcid.org/0009-0004-8460-2857"
+  - family-names: "Sun"
+    given-names: "Ruiping"
+    orcid: "https://orcid.org/0009-0009-0326-7791"
+  - family-names: "Huang"
+    given-names: "Hongwu"
+    orcid: "https://orcid.org/0009-0007-9041-2189"
+  - family-names: "Shi"
+    given-names: "LinChen"
+    orcid: "https://orcid.org/0009-0000-3532-4214"
+  - family-names: "Lin"
+    given-names: "Fanchao"
+    orcid: "https://orcid.org/0000-0001-5803-9598"
+  - family-names: "Ye"
+    given-names: "Yuping"
+    orcid: "https://orcid.org/0000-0002-3116-9410"
+abstract: >-
+  AquaGDR-Depth estimates metric depth from a single underwater
+  equirectangular panorama using gated dual-projection fusion and local-detail
+  residual refinement.
+keywords:
+  - underwater vision
+  - panoramic depth estimation
+  - equirectangular panorama
+  - metric depth estimation
